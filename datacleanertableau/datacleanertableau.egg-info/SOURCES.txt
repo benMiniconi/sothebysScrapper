@@ -1,0 +1,8 @@
+setup.py
+datacleanertableau/__init__.py
+datacleanertableau/cleanupmodule.py
+datacleanertableau.egg-info/PKG-INFO
+datacleanertableau.egg-info/SOURCES.txt
+datacleanertableau.egg-info/dependency_links.txt
+datacleanertableau.egg-info/not-zip-safe
+datacleanertableau.egg-info/top_level.txt

@@ -1,0 +1,3163 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0304.1147                               -->
+<workbook original-version='18.1' source-build='2020.2.0 (20202.20.0304.1147)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Extrait sothebysDatabase' inline='true' name='federated.0w8oek30tn4kt2168p9pa0yfa96k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sothebysDatabase' name='hyper.1ec6inf008zga20zl2lyl1cp7uz1'>
+            <connection authentication='auth-none' author-locale='fr_FR' class='hyper' dbname='/Users/benjamindeplus/Dev/dataWork/rmstohebys/sothebysDatabase.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.1ec6inf008zga20zl2lyl1cp7uz1' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.1ec6inf008zga20zl2lyl1cp7uz1' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Vente</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vente]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Vente</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>78</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VenteYear</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[VenteYear]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>VenteYear</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marque</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marque]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>marque</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>8</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annee</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[annee]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>annee</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>164</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>modele</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[modele]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>modele</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1235</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>988</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>File Paths</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[File Paths]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>File Paths</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>207</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='GroupeAnnée' datatype='string' name='[Annee (groupe)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[annee]' new-bin='true'>
+          <bin default-name='false' value='&quot;10s&quot;'>
+            <value>1911</value>
+            <value>1912</value>
+            <value>1914</value>
+          </bin>
+          <bin default-name='false' value='&quot;1900&apos;s&quot;'>
+            <value>1904</value>
+          </bin>
+          <bin default-name='false' value='&quot;20&apos;s&quot;'>
+            <value>1921</value>
+            <value>1924</value>
+            <value>1925</value>
+            <value>1927</value>
+            <value>1928</value>
+            <value>1929</value>
+          </bin>
+          <bin default-name='false' value='&quot;2000&apos;s&quot;'>
+            <value>2000</value>
+            <value>2001</value>
+            <value>2002</value>
+            <value>2003</value>
+            <value>2004</value>
+            <value>2005</value>
+            <value>2006</value>
+            <value>2007</value>
+            <value>2008</value>
+            <value>2009</value>
+          </bin>
+          <bin default-name='false' value='&quot;2010&apos;s&quot;'>
+            <value>2010</value>
+            <value>2011</value>
+            <value>2012</value>
+            <value>2013</value>
+            <value>2014</value>
+            <value>2015</value>
+            <value>2016</value>
+            <value>2017</value>
+            <value>2018</value>
+            <value>2019</value>
+          </bin>
+          <bin default-name='false' value='&quot;30&apos;s&quot;'>
+            <value>1930</value>
+            <value>1931</value>
+            <value>1932</value>
+            <value>1933</value>
+            <value>1934</value>
+            <value>1935</value>
+            <value>1936</value>
+            <value>1937</value>
+            <value>1938</value>
+            <value>1939</value>
+          </bin>
+          <bin default-name='false' value='&quot;40&apos;s&quot;'>
+            <value>1940</value>
+            <value>1941</value>
+            <value>1942</value>
+            <value>1943</value>
+            <value>1947</value>
+            <value>1948</value>
+            <value>1949</value>
+          </bin>
+          <bin default-name='false' value='&quot;50&apos;s&quot;'>
+            <value>1950</value>
+            <value>1951</value>
+            <value>1952</value>
+            <value>1953</value>
+            <value>1954</value>
+            <value>1955</value>
+            <value>1956</value>
+            <value>1957</value>
+            <value>1958</value>
+            <value>1959</value>
+          </bin>
+          <bin default-name='false' value='&quot;60&apos;s&quot;'>
+            <value>1960</value>
+            <value>1961</value>
+            <value>1962</value>
+            <value>1963</value>
+            <value>1964</value>
+            <value>1965</value>
+            <value>1966</value>
+            <value>1967</value>
+            <value>1968</value>
+            <value>1969</value>
+          </bin>
+          <bin default-name='false' value='&quot;70&apos;s&quot;'>
+            <value>1970</value>
+            <value>1971</value>
+            <value>1972</value>
+            <value>1973</value>
+            <value>1974</value>
+            <value>1975</value>
+            <value>1976</value>
+            <value>1977</value>
+            <value>1978</value>
+            <value>1979</value>
+          </bin>
+          <bin default-name='false' value='&quot;80&apos;s&quot;'>
+            <value>1980</value>
+            <value>1981</value>
+            <value>1982</value>
+            <value>1983</value>
+            <value>1984</value>
+            <value>1985</value>
+            <value>1986</value>
+            <value>1987</value>
+            <value>1988</value>
+            <value>1989</value>
+          </bin>
+          <bin default-name='false' value='&quot;90&apos;s&quot;'>
+            <value>1990</value>
+            <value>1991</value>
+            <value>1992</value>
+            <value>1993</value>
+            <value>1994</value>
+            <value>1995</value>
+            <value>1996</value>
+            <value>1997</value>
+            <value>1998</value>
+            <value>1999</value>
+          </bin>
+          <bin default-name='false' value='&quot;Autres&quot;'>
+            <value>0</value>
+            <value>759</value>
+            <value>1030</value>
+            <value>1045</value>
+            <value>1052</value>
+            <value>1120</value>
+            <value>1142</value>
+            <value>1148</value>
+            <value>1176</value>
+            <value>1232</value>
+            <value>1270</value>
+            <value>1316</value>
+            <value>1400</value>
+            <value>1540</value>
+            <value>1568</value>
+            <value>1600</value>
+            <value>1610</value>
+            <value>1624</value>
+            <value>1655</value>
+            <value>1736</value>
+            <value>1782</value>
+            <value>1792</value>
+            <value>1890</value>
+            <value>1897</value>
+            <value>2184</value>
+            <value>2185</value>
+            <value>2240</value>
+            <value>2255</value>
+            <value>2310</value>
+            <value>2352</value>
+            <value>2420</value>
+            <value>2464</value>
+            <value>2576</value>
+            <value>2585</value>
+            <value>2632</value>
+            <value>2640</value>
+            <value>2772</value>
+            <value>2800</value>
+            <value>2912</value>
+            <value>3025</value>
+            <value>3080</value>
+            <value>3136</value>
+            <value>3240</value>
+            <value>3300</value>
+            <value>3304</value>
+            <value>3360</value>
+            <value>3472</value>
+            <value>3685</value>
+            <value>3696</value>
+            <value>3808</value>
+            <value>3920</value>
+            <value>4032</value>
+            <value>4235</value>
+            <value>4290</value>
+            <value>4368</value>
+            <value>4480</value>
+            <value>4620</value>
+            <value>4704</value>
+            <value>4760</value>
+            <value>4816</value>
+            <value>4928</value>
+            <value>5040</value>
+            <value>5208</value>
+            <value>5320</value>
+            <value>5488</value>
+            <value>5824</value>
+            <value>5936</value>
+            <value>6050</value>
+            <value>6270</value>
+            <value>6540</value>
+            <value>6832</value>
+            <value>7000</value>
+            <value>7056</value>
+            <value>7168</value>
+            <value>7310</value>
+            <value>7370</value>
+            <value>7392</value>
+            <value>7480</value>
+            <value>7560</value>
+            <value>7700</value>
+            <value>7840</value>
+            <value>8120</value>
+            <value>8176</value>
+            <value>8200</value>
+            <value>8288</value>
+            <value>8305</value>
+            <value>8400</value>
+            <value>8512</value>
+            <value>8680</value>
+            <value>8736</value>
+            <value>8775</value>
+            <value>8800</value>
+            <value>8857</value>
+            <value>9016</value>
+            <value>9184</value>
+            <value>9240</value>
+            <value>9520</value>
+            <value>9603</value>
+            <value>9800</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='ReferencePrice' datatype='real' name='[Calculation_1964132435859894272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LOOKUP(AVG([Price]), FIRST())'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='AvgPriceGrowth' datatype='real' name='[Calculation_1964132435860103169]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='avg([Price])/[Calculation_1964132435859894272]-1'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='ClassificationZoneAndDecade' datatype='string' name='[Calculation_1964132435862011908]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[MarqueGroupedByCountry] + &quot; &quot; + [Annee (groupe)]' />
+      </column>
+      <column datatype='string' name='[MarqueGroupedByCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='categorical-bin' column='[marque]' new-bin='true'>
+          <bin default-name='false' value='&quot;England&quot;'>
+            <value>&quot;aston martin&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Germany&quot;'>
+            <value>&quot;bmw&quot;</value>
+            <value>&quot;mercedes&quot;</value>
+            <value>&quot;mercedes benz&quot;</value>
+            <value>&quot;porsche&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Italy&quot;'>
+            <value>&quot;alfa romeo&quot;</value>
+            <value>&quot;ferrari&quot;</value>
+            <value>&quot;maserati&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Vente Year' datatype='date' name='[VenteYear]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E]' role='measure' type='quantitative' />
+      <column caption='Annee' datatype='integer' datatype-customized='true' name='[annee]' role='dimension' type='ordinal' />
+      <column caption='Marque' datatype='string' name='[marque]' role='dimension' type='nominal' />
+      <column caption='Modele' datatype='string' name='[modele]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1964132435862011908]' derivation='None' name='[none:Calculation_1964132435862011908:nk]' pivot='key' type='nominal' />
+      <column-instance column='[marque]' derivation='None' name='[none:marque:nk]' pivot='key' type='nominal' />
+      <column-instance column='[VenteYear]' derivation='Year' name='[yr:VenteYear:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Exclusions (ANNÉE(Vente Year),GroupeAnnée)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:VenteYear:ok]' />
+          <groupfilter function='level-members' level='[Annee (groupe)]' />
+        </groupfilter>
+      </group>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Classification' role='dimensions'>
+        <folder-item name='[Annee (groupe)]' type='field' />
+        <folder-item name='[Calculation_1964132435862011908]' type='field' />
+        <folder-item name='[MarqueGroupedByCountry]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Classification'>
+          <folder-item name='[Annee (groupe)]' type='field' />
+          <folder-item name='[Calculation_1964132435862011908]' type='field' />
+          <folder-item name='[MarqueGroupedByCountry]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Annee (groupe)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;20&apos;s&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;60&apos;s&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;50&apos;s&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Autres&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;1900&apos;s&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;10s&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;80&apos;s&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2000&apos;s&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;40&apos;s&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;70&apos;s&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;30&apos;s&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2010&apos;s&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;90&apos;s&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[MarqueGroupedByCountry]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;England&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:marque:nk]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;maserati&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;alfa romeo&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;mercedes benz&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;bmw&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;aston martin&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;ferrari&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;porsche&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1964132435862011908:nk]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;England 2013&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;England 30&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Germany 1655&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Germany 2015&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Germany 3696&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Germany 60&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Italy 0&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Italy 1142&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Italy 2000&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Italy 2310&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Italy 8775&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;England 2012&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;England Autres&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Germany 1600&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Germany 2014&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Germany 3300&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Germany 50&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Germany 9603&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Italy 1925&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Italy 2185&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Italy 759&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Italy 8305&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;England 2019&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;England 70&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Germany 1911&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Germany 2018&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Germany 6540&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Germany 90&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Italy 1610&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Italy 2013&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Italy 3025&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Italy 40&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;England 1940&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Germany 1232&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Germany 20&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Germany 2010&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Germany 2640&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Germany 8800&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Italy 1890&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Italy 2016&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Italy 4290&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Italy 70&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;England 2018&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;England 60&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Germany 1900&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Germany 2017&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Germany 6050&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Germany 80&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Italy 1540&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Italy 2012&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Italy 2585&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Italy 30&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;England 2017&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;England 40&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;England 50&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Germany 1736&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Germany 2016&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Germany 4620&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Germany 70&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Italy 1232&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Italy 20&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Italy 2010&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Italy 2420&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;England 2000&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Germany 1270&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Germany 2012&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Germany 30&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Germany 3080&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Germany 9016&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Italy 1897&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Italy 2017&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Italy 6270&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Italy 80&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;England 2010&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Germany 1400&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Germany 2013&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Germany 3240&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Germany 40&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Germany 9184&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Italy 1921&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Italy 2018&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Italy 7370&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Italy 90&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;England 90&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Germany 10s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Germany 1120&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Germany 2000&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Germany 2464&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Germany 7480&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Italy 1792&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Italy 2015&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Italy 4235&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Italy 60&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;England 2255&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;England 80&apos;s&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Germany 1045&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Germany 1941&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Germany 2240&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Germany 7310&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Italy 1782&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Italy 2014&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Italy 3685&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Italy 50&apos;s&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1964132435862011908:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Germany 40&apos;s&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Germany 60&apos;s&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;mercedes 1052&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;mercedes 2576&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;mercedes 5488&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;England 30&apos;s&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;England 50&apos;s&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;mercedes 4368&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;mercedes 8512&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;England 90&apos;s&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Italy 2009&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;mercedes 1624&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;mercedes 4816&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;mercedes 9520&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Germany 2000&apos;s&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;mercedes 1148&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;mercedes 2912&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;mercedes 7000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Germany 70&apos;s&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Italy 1030&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;mercedes 20&apos;s&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;mercedes 2632&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;mercedes 5824&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;mercedes Autres&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;England 2000&apos;s&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Italy 2010&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Italy 2010&apos;s&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;mercedes 1912&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;mercedes 4928&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;mercedes 9800&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Germany 2007&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Italy 90&apos;s&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;mercedes 3920&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;mercedes 8288&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;England 60&apos;s&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Germany 2011&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;mercedes 1176&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;mercedes 4480&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;mercedes 8680&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Italy 2007&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Italy 70&apos;s&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;mercedes 3472&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;mercedes 8120&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Germany 20&apos;s&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Germany 30&apos;s&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Italy 8857&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Italy Autres&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;mercedes 2184&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;mercedes 5040&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Germany 1900&apos;s&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Italy 2005&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Italy 40&apos;s&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;mercedes 3136&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;mercedes 7056&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Germany 1942&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Italy 50&apos;s&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;mercedes 3304&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;mercedes 7560&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Germany 2005&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Italy 80&apos;s&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;mercedes 3808&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;mercedes 8176&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Germany 2008&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Germany Autres&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Italy 2000&apos;s&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;mercedes 4032&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;mercedes 8400&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Germany 80&apos;s&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Italy 1942&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mercedes 1900&apos;s&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mercedes 2772&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mercedes 5936&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;England 2005&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Germany 10s&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Germany 50&apos;s&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;mercedes 10s&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;mercedes 2352&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;mercedes 5320&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;England 70&apos;s&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Italy 20&apos;s&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;mercedes 1316&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;mercedes 4704&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;mercedes 8736&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Germany 1943&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Germany 2010&apos;s&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Italy 30&apos;s&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Italy 60&apos;s&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;mercedes 3360&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;mercedes 7840&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Germany 90&apos;s&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Italy 1947&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;mercedes 2800&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;mercedes 6832&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;England 80&apos;s&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Italy 2008&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;mercedes 1568&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;mercedes 4760&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;mercedes 9240&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_08090B272AC84134A983E8238CB4585E'>
+            <properties context=''>
+              <relation connection='hyper.1ec6inf008zga20zl2lyl1cp7uz1' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Feuille 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Extrait sothebysDatabase' name='federated.0w8oek30tn4kt2168p9pa0yfa96k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w8oek30tn4kt2168p9pa0yfa96k'>
+            <column caption='GroupeAnnée' datatype='string' name='[Annee (groupe)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[annee]' new-bin='true'>
+                <bin default-name='false' value='&quot;10s&quot;'>
+                  <value>1911</value>
+                  <value>1912</value>
+                  <value>1914</value>
+                </bin>
+                <bin default-name='false' value='&quot;1900&apos;s&quot;'>
+                  <value>1904</value>
+                </bin>
+                <bin default-name='false' value='&quot;20&apos;s&quot;'>
+                  <value>1921</value>
+                  <value>1924</value>
+                  <value>1925</value>
+                  <value>1927</value>
+                  <value>1928</value>
+                  <value>1929</value>
+                </bin>
+                <bin default-name='false' value='&quot;2000&apos;s&quot;'>
+                  <value>2000</value>
+                  <value>2001</value>
+                  <value>2002</value>
+                  <value>2003</value>
+                  <value>2004</value>
+                  <value>2005</value>
+                  <value>2006</value>
+                  <value>2007</value>
+                  <value>2008</value>
+                  <value>2009</value>
+                </bin>
+                <bin default-name='false' value='&quot;2010&apos;s&quot;'>
+                  <value>2010</value>
+                  <value>2011</value>
+                  <value>2012</value>
+                  <value>2013</value>
+                  <value>2014</value>
+                  <value>2015</value>
+                  <value>2016</value>
+                  <value>2017</value>
+                  <value>2018</value>
+                  <value>2019</value>
+                </bin>
+                <bin default-name='false' value='&quot;30&apos;s&quot;'>
+                  <value>1930</value>
+                  <value>1931</value>
+                  <value>1932</value>
+                  <value>1933</value>
+                  <value>1934</value>
+                  <value>1935</value>
+                  <value>1936</value>
+                  <value>1937</value>
+                  <value>1938</value>
+                  <value>1939</value>
+                </bin>
+                <bin default-name='false' value='&quot;40&apos;s&quot;'>
+                  <value>1940</value>
+                  <value>1941</value>
+                  <value>1942</value>
+                  <value>1943</value>
+                  <value>1947</value>
+                  <value>1948</value>
+                  <value>1949</value>
+                </bin>
+                <bin default-name='false' value='&quot;50&apos;s&quot;'>
+                  <value>1950</value>
+                  <value>1951</value>
+                  <value>1952</value>
+                  <value>1953</value>
+                  <value>1954</value>
+                  <value>1955</value>
+                  <value>1956</value>
+                  <value>1957</value>
+                  <value>1958</value>
+                  <value>1959</value>
+                </bin>
+                <bin default-name='false' value='&quot;60&apos;s&quot;'>
+                  <value>1960</value>
+                  <value>1961</value>
+                  <value>1962</value>
+                  <value>1963</value>
+                  <value>1964</value>
+                  <value>1965</value>
+                  <value>1966</value>
+                  <value>1967</value>
+                  <value>1968</value>
+                  <value>1969</value>
+                </bin>
+                <bin default-name='false' value='&quot;70&apos;s&quot;'>
+                  <value>1970</value>
+                  <value>1971</value>
+                  <value>1972</value>
+                  <value>1973</value>
+                  <value>1974</value>
+                  <value>1975</value>
+                  <value>1976</value>
+                  <value>1977</value>
+                  <value>1978</value>
+                  <value>1979</value>
+                </bin>
+                <bin default-name='false' value='&quot;80&apos;s&quot;'>
+                  <value>1980</value>
+                  <value>1981</value>
+                  <value>1982</value>
+                  <value>1983</value>
+                  <value>1984</value>
+                  <value>1985</value>
+                  <value>1986</value>
+                  <value>1987</value>
+                  <value>1988</value>
+                  <value>1989</value>
+                </bin>
+                <bin default-name='false' value='&quot;90&apos;s&quot;'>
+                  <value>1990</value>
+                  <value>1991</value>
+                  <value>1992</value>
+                  <value>1993</value>
+                  <value>1994</value>
+                  <value>1995</value>
+                  <value>1996</value>
+                  <value>1997</value>
+                  <value>1998</value>
+                  <value>1999</value>
+                </bin>
+                <bin default-name='false' value='&quot;Autres&quot;'>
+                  <value>0</value>
+                  <value>759</value>
+                  <value>1030</value>
+                  <value>1045</value>
+                  <value>1052</value>
+                  <value>1120</value>
+                  <value>1142</value>
+                  <value>1148</value>
+                  <value>1176</value>
+                  <value>1232</value>
+                  <value>1270</value>
+                  <value>1316</value>
+                  <value>1400</value>
+                  <value>1540</value>
+                  <value>1568</value>
+                  <value>1600</value>
+                  <value>1610</value>
+                  <value>1624</value>
+                  <value>1655</value>
+                  <value>1736</value>
+                  <value>1782</value>
+                  <value>1792</value>
+                  <value>1890</value>
+                  <value>1897</value>
+                  <value>2184</value>
+                  <value>2185</value>
+                  <value>2240</value>
+                  <value>2255</value>
+                  <value>2310</value>
+                  <value>2352</value>
+                  <value>2420</value>
+                  <value>2464</value>
+                  <value>2576</value>
+                  <value>2585</value>
+                  <value>2632</value>
+                  <value>2640</value>
+                  <value>2772</value>
+                  <value>2800</value>
+                  <value>2912</value>
+                  <value>3025</value>
+                  <value>3080</value>
+                  <value>3136</value>
+                  <value>3240</value>
+                  <value>3300</value>
+                  <value>3304</value>
+                  <value>3360</value>
+                  <value>3472</value>
+                  <value>3685</value>
+                  <value>3696</value>
+                  <value>3808</value>
+                  <value>3920</value>
+                  <value>4032</value>
+                  <value>4235</value>
+                  <value>4290</value>
+                  <value>4368</value>
+                  <value>4480</value>
+                  <value>4620</value>
+                  <value>4704</value>
+                  <value>4760</value>
+                  <value>4816</value>
+                  <value>4928</value>
+                  <value>5040</value>
+                  <value>5208</value>
+                  <value>5320</value>
+                  <value>5488</value>
+                  <value>5824</value>
+                  <value>5936</value>
+                  <value>6050</value>
+                  <value>6270</value>
+                  <value>6540</value>
+                  <value>6832</value>
+                  <value>7000</value>
+                  <value>7056</value>
+                  <value>7168</value>
+                  <value>7310</value>
+                  <value>7370</value>
+                  <value>7392</value>
+                  <value>7480</value>
+                  <value>7560</value>
+                  <value>7700</value>
+                  <value>7840</value>
+                  <value>8120</value>
+                  <value>8176</value>
+                  <value>8200</value>
+                  <value>8288</value>
+                  <value>8305</value>
+                  <value>8400</value>
+                  <value>8512</value>
+                  <value>8680</value>
+                  <value>8736</value>
+                  <value>8775</value>
+                  <value>8800</value>
+                  <value>8857</value>
+                  <value>9016</value>
+                  <value>9184</value>
+                  <value>9240</value>
+                  <value>9520</value>
+                  <value>9603</value>
+                  <value>9800</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='ReferencePrice' datatype='real' name='[Calculation_1964132435859894272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOOKUP(AVG([Price]), FIRST())'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='AvgPriceGrowth' datatype='real' name='[Calculation_1964132435860103169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg([Price])/[Calculation_1964132435859894272]-1'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='ClassificationZoneAndDecade' datatype='string' name='[Calculation_1964132435862011908]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[MarqueGroupedByCountry] + &quot; &quot; + [Annee (groupe)]' />
+            </column>
+            <column datatype='string' name='[MarqueGroupedByCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[marque]' new-bin='true'>
+                <bin default-name='false' value='&quot;England&quot;'>
+                  <value>&quot;aston martin&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Germany&quot;'>
+                  <value>&quot;bmw&quot;</value>
+                  <value>&quot;mercedes&quot;</value>
+                  <value>&quot;mercedes benz&quot;</value>
+                  <value>&quot;porsche&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Italy&quot;'>
+                  <value>&quot;alfa romeo&quot;</value>
+                  <value>&quot;ferrari&quot;</value>
+                  <value>&quot;maserati&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column caption='Vente Year' datatype='date' name='[VenteYear]' role='dimension' type='ordinal' />
+            <column caption='Annee' datatype='integer' datatype-customized='true' name='[annee]' role='dimension' type='ordinal' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[modele]' derivation='Count' name='[cnt:modele:qk]' pivot='key' type='quantitative' />
+            <column caption='Marque' datatype='string' name='[marque]' role='dimension' type='nominal' />
+            <column caption='Modele' datatype='string' name='[modele]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1964132435862011908]' derivation='None' name='[none:Calculation_1964132435862011908:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marque]' derivation='None' name='[none:marque:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1964132435860103169]' derivation='User' name='[usr:Calculation_1964132435860103169:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Calculation_1964132435859894272]' ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[VenteYear]' derivation='Year' name='[yr:VenteYear:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Annee (groupe)]' />
+              <groupfilter function='member' level='[Annee (groupe)]' member='&quot;20&apos;s&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Exclusions (ANNÉE(Vente Year),GroupeAnnée)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[yr:VenteYear:ok]' />
+                <groupfilter function='level-members' level='[Annee (groupe)]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[Annee (groupe)]' member='&quot;1900&apos;s&quot;' />
+                  <groupfilter function='member' level='[yr:VenteYear:ok]' member='2003' />
+                </groupfilter>
+                <order>
+                  <hierarchy name='[yr:VenteYear:ok]' />
+                  <hierarchy name='[Annee (groupe)]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:marque:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:marque:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:marque:nk]' member='&quot;alfa romeo&quot;' />
+                <groupfilter function='member' level='[none:marque:nk]' member='&quot;bmw&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]</column>
+            <column>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Exclusions (ANNÉE(Vente Year),GroupeAnnée)]</column>
+            <column>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:marque:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='182' />
+            <format attr='text-format' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[usr:Calculation_1964132435860103169:qk:1]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:modele:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]' />
+              <shape column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]' />
+              <size column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:modele:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25187844038009644' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]' />
+              <text column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[usr:Calculation_1964132435860103169:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:modele:qk] + [federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk])</rows>
+        <cols>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</cols>
+      </table>
+      <simple-id uuid='{370862DE-2017-43C2-A90F-77EEB79ADC55}' />
+    </worksheet>
+    <worksheet name='Feuille 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Extrait sothebysDatabase' name='federated.0w8oek30tn4kt2168p9pa0yfa96k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w8oek30tn4kt2168p9pa0yfa96k'>
+            <column datatype='string' name='[MarqueGroupedByCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[marque]' new-bin='true'>
+                <bin default-name='false' value='&quot;England&quot;'>
+                  <value>&quot;aston martin&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Germany&quot;'>
+                  <value>&quot;bmw&quot;</value>
+                  <value>&quot;mercedes&quot;</value>
+                  <value>&quot;mercedes benz&quot;</value>
+                  <value>&quot;porsche&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Italy&quot;'>
+                  <value>&quot;alfa romeo&quot;</value>
+                  <value>&quot;ferrari&quot;</value>
+                  <value>&quot;maserati&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column caption='Vente Year' datatype='date' name='[VenteYear]' role='dimension' type='ordinal' />
+            <column caption='Annee' datatype='integer' datatype-customized='true' name='[annee]' role='dimension' type='ordinal' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column caption='Marque' datatype='string' name='[marque]' role='dimension' type='nominal' />
+            <column caption='Modele' datatype='string' name='[modele]' role='dimension' type='nominal' />
+            <column-instance column='[annee]' derivation='None' name='[none:annee:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[marque]' derivation='None' name='[none:marque:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modele]' derivation='None' name='[none:modele:nk]' pivot='key' type='nominal' />
+            <column-instance column='[VenteYear]' derivation='Year' name='[yr:VenteYear:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='152' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[MarqueGroupedByCountry]' />
+              <shape column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:marque:nk]' />
+              <size column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk]' />
+              <lod column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:modele:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.579714298248291' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:annee:qk]</rows>
+        <cols>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</cols>
+      </table>
+      <simple-id uuid='{6E9F8D0B-883B-41A4-81AC-8452B7B05489}' />
+    </worksheet>
+    <worksheet name='Feuille 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Extrait sothebysDatabase' name='federated.0w8oek30tn4kt2168p9pa0yfa96k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w8oek30tn4kt2168p9pa0yfa96k'>
+            <column caption='GroupeAnnée' datatype='string' name='[Annee (groupe)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[annee]' new-bin='true'>
+                <bin default-name='false' value='&quot;10s&quot;'>
+                  <value>1911</value>
+                  <value>1912</value>
+                  <value>1914</value>
+                </bin>
+                <bin default-name='false' value='&quot;1900&apos;s&quot;'>
+                  <value>1904</value>
+                </bin>
+                <bin default-name='false' value='&quot;20&apos;s&quot;'>
+                  <value>1921</value>
+                  <value>1924</value>
+                  <value>1925</value>
+                  <value>1927</value>
+                  <value>1928</value>
+                  <value>1929</value>
+                </bin>
+                <bin default-name='false' value='&quot;2000&apos;s&quot;'>
+                  <value>2000</value>
+                  <value>2001</value>
+                  <value>2002</value>
+                  <value>2003</value>
+                  <value>2004</value>
+                  <value>2005</value>
+                  <value>2006</value>
+                  <value>2007</value>
+                  <value>2008</value>
+                  <value>2009</value>
+                </bin>
+                <bin default-name='false' value='&quot;2010&apos;s&quot;'>
+                  <value>2010</value>
+                  <value>2011</value>
+                  <value>2012</value>
+                  <value>2013</value>
+                  <value>2014</value>
+                  <value>2015</value>
+                  <value>2016</value>
+                  <value>2017</value>
+                  <value>2018</value>
+                  <value>2019</value>
+                </bin>
+                <bin default-name='false' value='&quot;30&apos;s&quot;'>
+                  <value>1930</value>
+                  <value>1931</value>
+                  <value>1932</value>
+                  <value>1933</value>
+                  <value>1934</value>
+                  <value>1935</value>
+                  <value>1936</value>
+                  <value>1937</value>
+                  <value>1938</value>
+                  <value>1939</value>
+                </bin>
+                <bin default-name='false' value='&quot;40&apos;s&quot;'>
+                  <value>1940</value>
+                  <value>1941</value>
+                  <value>1942</value>
+                  <value>1943</value>
+                  <value>1947</value>
+                  <value>1948</value>
+                  <value>1949</value>
+                </bin>
+                <bin default-name='false' value='&quot;50&apos;s&quot;'>
+                  <value>1950</value>
+                  <value>1951</value>
+                  <value>1952</value>
+                  <value>1953</value>
+                  <value>1954</value>
+                  <value>1955</value>
+                  <value>1956</value>
+                  <value>1957</value>
+                  <value>1958</value>
+                  <value>1959</value>
+                </bin>
+                <bin default-name='false' value='&quot;60&apos;s&quot;'>
+                  <value>1960</value>
+                  <value>1961</value>
+                  <value>1962</value>
+                  <value>1963</value>
+                  <value>1964</value>
+                  <value>1965</value>
+                  <value>1966</value>
+                  <value>1967</value>
+                  <value>1968</value>
+                  <value>1969</value>
+                </bin>
+                <bin default-name='false' value='&quot;70&apos;s&quot;'>
+                  <value>1970</value>
+                  <value>1971</value>
+                  <value>1972</value>
+                  <value>1973</value>
+                  <value>1974</value>
+                  <value>1975</value>
+                  <value>1976</value>
+                  <value>1977</value>
+                  <value>1978</value>
+                  <value>1979</value>
+                </bin>
+                <bin default-name='false' value='&quot;80&apos;s&quot;'>
+                  <value>1980</value>
+                  <value>1981</value>
+                  <value>1982</value>
+                  <value>1983</value>
+                  <value>1984</value>
+                  <value>1985</value>
+                  <value>1986</value>
+                  <value>1987</value>
+                  <value>1988</value>
+                  <value>1989</value>
+                </bin>
+                <bin default-name='false' value='&quot;90&apos;s&quot;'>
+                  <value>1990</value>
+                  <value>1991</value>
+                  <value>1992</value>
+                  <value>1993</value>
+                  <value>1994</value>
+                  <value>1995</value>
+                  <value>1996</value>
+                  <value>1997</value>
+                  <value>1998</value>
+                  <value>1999</value>
+                </bin>
+                <bin default-name='false' value='&quot;Autres&quot;'>
+                  <value>0</value>
+                  <value>759</value>
+                  <value>1030</value>
+                  <value>1045</value>
+                  <value>1052</value>
+                  <value>1120</value>
+                  <value>1142</value>
+                  <value>1148</value>
+                  <value>1176</value>
+                  <value>1232</value>
+                  <value>1270</value>
+                  <value>1316</value>
+                  <value>1400</value>
+                  <value>1540</value>
+                  <value>1568</value>
+                  <value>1600</value>
+                  <value>1610</value>
+                  <value>1624</value>
+                  <value>1655</value>
+                  <value>1736</value>
+                  <value>1782</value>
+                  <value>1792</value>
+                  <value>1890</value>
+                  <value>1897</value>
+                  <value>2184</value>
+                  <value>2185</value>
+                  <value>2240</value>
+                  <value>2255</value>
+                  <value>2310</value>
+                  <value>2352</value>
+                  <value>2420</value>
+                  <value>2464</value>
+                  <value>2576</value>
+                  <value>2585</value>
+                  <value>2632</value>
+                  <value>2640</value>
+                  <value>2772</value>
+                  <value>2800</value>
+                  <value>2912</value>
+                  <value>3025</value>
+                  <value>3080</value>
+                  <value>3136</value>
+                  <value>3240</value>
+                  <value>3300</value>
+                  <value>3304</value>
+                  <value>3360</value>
+                  <value>3472</value>
+                  <value>3685</value>
+                  <value>3696</value>
+                  <value>3808</value>
+                  <value>3920</value>
+                  <value>4032</value>
+                  <value>4235</value>
+                  <value>4290</value>
+                  <value>4368</value>
+                  <value>4480</value>
+                  <value>4620</value>
+                  <value>4704</value>
+                  <value>4760</value>
+                  <value>4816</value>
+                  <value>4928</value>
+                  <value>5040</value>
+                  <value>5208</value>
+                  <value>5320</value>
+                  <value>5488</value>
+                  <value>5824</value>
+                  <value>5936</value>
+                  <value>6050</value>
+                  <value>6270</value>
+                  <value>6540</value>
+                  <value>6832</value>
+                  <value>7000</value>
+                  <value>7056</value>
+                  <value>7168</value>
+                  <value>7310</value>
+                  <value>7370</value>
+                  <value>7392</value>
+                  <value>7480</value>
+                  <value>7560</value>
+                  <value>7700</value>
+                  <value>7840</value>
+                  <value>8120</value>
+                  <value>8176</value>
+                  <value>8200</value>
+                  <value>8288</value>
+                  <value>8305</value>
+                  <value>8400</value>
+                  <value>8512</value>
+                  <value>8680</value>
+                  <value>8736</value>
+                  <value>8775</value>
+                  <value>8800</value>
+                  <value>8857</value>
+                  <value>9016</value>
+                  <value>9184</value>
+                  <value>9240</value>
+                  <value>9520</value>
+                  <value>9603</value>
+                  <value>9800</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='ReferencePrice' datatype='real' name='[Calculation_1964132435859894272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOOKUP(AVG([Price]), FIRST())'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='AvgPriceGrowth' datatype='real' name='[Calculation_1964132435860103169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg([Price])/[Calculation_1964132435859894272]-1'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='ClassificationZoneAndDecade' datatype='string' name='[Calculation_1964132435862011908]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[MarqueGroupedByCountry] + &quot; &quot; + [Annee (groupe)]' />
+            </column>
+            <column datatype='string' name='[MarqueGroupedByCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[marque]' new-bin='true'>
+                <bin default-name='false' value='&quot;England&quot;'>
+                  <value>&quot;aston martin&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Germany&quot;'>
+                  <value>&quot;bmw&quot;</value>
+                  <value>&quot;mercedes&quot;</value>
+                  <value>&quot;mercedes benz&quot;</value>
+                  <value>&quot;porsche&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Italy&quot;'>
+                  <value>&quot;alfa romeo&quot;</value>
+                  <value>&quot;ferrari&quot;</value>
+                  <value>&quot;maserati&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column caption='Vente Year' datatype='date' name='[VenteYear]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Vente]' role='dimension' type='nominal' />
+            <column caption='Annee' datatype='integer' datatype-customized='true' name='[annee]' role='dimension' type='ordinal' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Vente]' derivation='Count' name='[cnt:Vente:qk]' pivot='key' type='quantitative' />
+            <column caption='Marque' datatype='string' name='[marque]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1964132435862011908]' derivation='None' name='[none:Calculation_1964132435862011908:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1964132435860103169]' derivation='User' name='[usr:Calculation_1964132435860103169:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Calculation_1964132435859894272]' ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[VenteYear]' derivation='Year' name='[yr:VenteYear:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_1964132435862011908:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Calculation_1964132435862011908:nk]' member='&quot;Germany Autres&quot;' />
+                <groupfilter function='member' level='[none:Calculation_1964132435862011908:nk]' member='&quot;Italy Autres&quot;' />
+                <groupfilter function='member' level='[none:Calculation_1964132435862011908:nk]' member='&quot;mercedes Autres&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='width' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:Vente:qk]' value='186' />
+            <format attr='width' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk]' value='186' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='196' />
+            <format attr='text-format' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[usr:Calculation_1964132435860103169:qk:1]' value='p0.00%' />
+            <format attr='text-align' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='auto' />
+            <format attr='font-size' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='8' />
+            <format attr='text-orientation' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='90' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-orientation' data-class='subtotal' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='90' />
+            <format attr='wrap' data-class='subtotal' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='8' />
+            <format attr='text-orientation' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]' value='90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:Vente:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.74662983417510986' />
+                <format attr='mark-transparency' value='109' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]' />
+              <text column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[usr:Calculation_1964132435860103169:qk:1]' />
+              <color column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:Vente:qk] + [federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk])</rows>
+        <cols>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</cols>
+      </table>
+      <simple-id uuid='{7EF56D15-D108-40D4-8162-8353366C491C}' />
+    </worksheet>
+    <worksheet name='Feuille 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Extrait sothebysDatabase' name='federated.0w8oek30tn4kt2168p9pa0yfa96k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w8oek30tn4kt2168p9pa0yfa96k'>
+            <column caption='GroupeAnnée' datatype='string' name='[Annee (groupe)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[annee]' new-bin='true'>
+                <bin default-name='false' value='&quot;10s&quot;'>
+                  <value>1911</value>
+                  <value>1912</value>
+                  <value>1914</value>
+                </bin>
+                <bin default-name='false' value='&quot;1900&apos;s&quot;'>
+                  <value>1904</value>
+                </bin>
+                <bin default-name='false' value='&quot;20&apos;s&quot;'>
+                  <value>1921</value>
+                  <value>1924</value>
+                  <value>1925</value>
+                  <value>1927</value>
+                  <value>1928</value>
+                  <value>1929</value>
+                </bin>
+                <bin default-name='false' value='&quot;2000&apos;s&quot;'>
+                  <value>2000</value>
+                  <value>2001</value>
+                  <value>2002</value>
+                  <value>2003</value>
+                  <value>2004</value>
+                  <value>2005</value>
+                  <value>2006</value>
+                  <value>2007</value>
+                  <value>2008</value>
+                  <value>2009</value>
+                </bin>
+                <bin default-name='false' value='&quot;2010&apos;s&quot;'>
+                  <value>2010</value>
+                  <value>2011</value>
+                  <value>2012</value>
+                  <value>2013</value>
+                  <value>2014</value>
+                  <value>2015</value>
+                  <value>2016</value>
+                  <value>2017</value>
+                  <value>2018</value>
+                  <value>2019</value>
+                </bin>
+                <bin default-name='false' value='&quot;30&apos;s&quot;'>
+                  <value>1930</value>
+                  <value>1931</value>
+                  <value>1932</value>
+                  <value>1933</value>
+                  <value>1934</value>
+                  <value>1935</value>
+                  <value>1936</value>
+                  <value>1937</value>
+                  <value>1938</value>
+                  <value>1939</value>
+                </bin>
+                <bin default-name='false' value='&quot;40&apos;s&quot;'>
+                  <value>1940</value>
+                  <value>1941</value>
+                  <value>1942</value>
+                  <value>1943</value>
+                  <value>1947</value>
+                  <value>1948</value>
+                  <value>1949</value>
+                </bin>
+                <bin default-name='false' value='&quot;50&apos;s&quot;'>
+                  <value>1950</value>
+                  <value>1951</value>
+                  <value>1952</value>
+                  <value>1953</value>
+                  <value>1954</value>
+                  <value>1955</value>
+                  <value>1956</value>
+                  <value>1957</value>
+                  <value>1958</value>
+                  <value>1959</value>
+                </bin>
+                <bin default-name='false' value='&quot;60&apos;s&quot;'>
+                  <value>1960</value>
+                  <value>1961</value>
+                  <value>1962</value>
+                  <value>1963</value>
+                  <value>1964</value>
+                  <value>1965</value>
+                  <value>1966</value>
+                  <value>1967</value>
+                  <value>1968</value>
+                  <value>1969</value>
+                </bin>
+                <bin default-name='false' value='&quot;70&apos;s&quot;'>
+                  <value>1970</value>
+                  <value>1971</value>
+                  <value>1972</value>
+                  <value>1973</value>
+                  <value>1974</value>
+                  <value>1975</value>
+                  <value>1976</value>
+                  <value>1977</value>
+                  <value>1978</value>
+                  <value>1979</value>
+                </bin>
+                <bin default-name='false' value='&quot;80&apos;s&quot;'>
+                  <value>1980</value>
+                  <value>1981</value>
+                  <value>1982</value>
+                  <value>1983</value>
+                  <value>1984</value>
+                  <value>1985</value>
+                  <value>1986</value>
+                  <value>1987</value>
+                  <value>1988</value>
+                  <value>1989</value>
+                </bin>
+                <bin default-name='false' value='&quot;90&apos;s&quot;'>
+                  <value>1990</value>
+                  <value>1991</value>
+                  <value>1992</value>
+                  <value>1993</value>
+                  <value>1994</value>
+                  <value>1995</value>
+                  <value>1996</value>
+                  <value>1997</value>
+                  <value>1998</value>
+                  <value>1999</value>
+                </bin>
+                <bin default-name='false' value='&quot;Autres&quot;'>
+                  <value>0</value>
+                  <value>759</value>
+                  <value>1030</value>
+                  <value>1045</value>
+                  <value>1052</value>
+                  <value>1120</value>
+                  <value>1142</value>
+                  <value>1148</value>
+                  <value>1176</value>
+                  <value>1232</value>
+                  <value>1270</value>
+                  <value>1316</value>
+                  <value>1400</value>
+                  <value>1540</value>
+                  <value>1568</value>
+                  <value>1600</value>
+                  <value>1610</value>
+                  <value>1624</value>
+                  <value>1655</value>
+                  <value>1736</value>
+                  <value>1782</value>
+                  <value>1792</value>
+                  <value>1890</value>
+                  <value>1897</value>
+                  <value>2184</value>
+                  <value>2185</value>
+                  <value>2240</value>
+                  <value>2255</value>
+                  <value>2310</value>
+                  <value>2352</value>
+                  <value>2420</value>
+                  <value>2464</value>
+                  <value>2576</value>
+                  <value>2585</value>
+                  <value>2632</value>
+                  <value>2640</value>
+                  <value>2772</value>
+                  <value>2800</value>
+                  <value>2912</value>
+                  <value>3025</value>
+                  <value>3080</value>
+                  <value>3136</value>
+                  <value>3240</value>
+                  <value>3300</value>
+                  <value>3304</value>
+                  <value>3360</value>
+                  <value>3472</value>
+                  <value>3685</value>
+                  <value>3696</value>
+                  <value>3808</value>
+                  <value>3920</value>
+                  <value>4032</value>
+                  <value>4235</value>
+                  <value>4290</value>
+                  <value>4368</value>
+                  <value>4480</value>
+                  <value>4620</value>
+                  <value>4704</value>
+                  <value>4760</value>
+                  <value>4816</value>
+                  <value>4928</value>
+                  <value>5040</value>
+                  <value>5208</value>
+                  <value>5320</value>
+                  <value>5488</value>
+                  <value>5824</value>
+                  <value>5936</value>
+                  <value>6050</value>
+                  <value>6270</value>
+                  <value>6540</value>
+                  <value>6832</value>
+                  <value>7000</value>
+                  <value>7056</value>
+                  <value>7168</value>
+                  <value>7310</value>
+                  <value>7370</value>
+                  <value>7392</value>
+                  <value>7480</value>
+                  <value>7560</value>
+                  <value>7700</value>
+                  <value>7840</value>
+                  <value>8120</value>
+                  <value>8176</value>
+                  <value>8200</value>
+                  <value>8288</value>
+                  <value>8305</value>
+                  <value>8400</value>
+                  <value>8512</value>
+                  <value>8680</value>
+                  <value>8736</value>
+                  <value>8775</value>
+                  <value>8800</value>
+                  <value>8857</value>
+                  <value>9016</value>
+                  <value>9184</value>
+                  <value>9240</value>
+                  <value>9520</value>
+                  <value>9603</value>
+                  <value>9800</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='ReferencePrice' datatype='real' name='[Calculation_1964132435859894272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOOKUP(AVG([Price]), FIRST())'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='AvgPriceGrowth' datatype='real' name='[Calculation_1964132435860103169]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg([Price])/[Calculation_1964132435859894272]-1'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='ClassificationZoneAndDecade' datatype='string' name='[Calculation_1964132435862011908]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[MarqueGroupedByCountry] + &quot; &quot; + [Annee (groupe)]' />
+            </column>
+            <column datatype='string' name='[MarqueGroupedByCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[marque]' new-bin='true'>
+                <bin default-name='false' value='&quot;England&quot;'>
+                  <value>&quot;aston martin&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Germany&quot;'>
+                  <value>&quot;bmw&quot;</value>
+                  <value>&quot;mercedes&quot;</value>
+                  <value>&quot;mercedes benz&quot;</value>
+                  <value>&quot;porsche&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Italy&quot;'>
+                  <value>&quot;alfa romeo&quot;</value>
+                  <value>&quot;ferrari&quot;</value>
+                  <value>&quot;maserati&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column caption='Vente Year' datatype='date' name='[VenteYear]' role='dimension' type='ordinal' />
+            <column caption='Annee' datatype='integer' datatype-customized='true' name='[annee]' role='dimension' type='ordinal' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[modele]' derivation='Count' name='[cnt:modele:qk]' pivot='key' type='quantitative' />
+            <column caption='Marque' datatype='string' name='[marque]' role='dimension' type='nominal' />
+            <column caption='Modele' datatype='string' name='[modele]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1964132435862011908]' derivation='None' name='[none:Calculation_1964132435862011908:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Price]' derivation='None' name='[none:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1964132435860103169]' derivation='User' name='[usr:Calculation_1964132435860103169:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Calculation_1964132435859894272]' ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[VenteYear]' derivation='Year' name='[yr:VenteYear:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Annee (groupe)]' />
+              <groupfilter function='union'>
+                <groupfilter from='&quot;10s&quot;' function='range' level='[Annee (groupe)]' to='&quot;40&apos;s&quot;' />
+                <groupfilter from='&quot;70&apos;s&quot;' function='range' level='[Annee (groupe)]' to='&quot;Autres&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Price:qk]' included-values='in-range'>
+            <min>5029</min>
+            <max>48405000</max>
+          </filter>
+          <slices>
+            <column>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]</column>
+            <column>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Price:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[usr:Calculation_1964132435860103169:qk:1]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]' />
+              <tooltip column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:modele:qk]' />
+              <text column='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[usr:Calculation_1964132435860103169:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk]</rows>
+        <cols>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</cols>
+      </table>
+      <simple-id uuid='{3837951F-B424-4E51-A254-9FB073F8F5AE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Feuille 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='1' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]' type='shape' />
+            <card pane-specification-id='1' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[cnt:modele:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435860848642:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:marque:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:modele:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{56C94BDA-BAB8-4670-B596-BCDA05E985E0}' />
+    </window>
+    <window class='worksheet' name='Feuille 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:marque:nk]' type='shape' />
+            <card pane-specification-id='0' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[avg:Price:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[MarqueGroupedByCountry]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[Annee (groupe)]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[MarqueGroupedByCountry]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:annee:ok]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:marque:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:modele:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{20AD630C-25A3-48C8-98B6-A0E7C4F47539}' />
+    </window>
+    <window class='worksheet' name='Feuille 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='215'>
+            <card pane-specification-id='2' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]&#10;[federated.0w8oek30tn4kt2168p9pa0yfa96k].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[:Measure Names]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Vente:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B3A7349-6FA7-480B-BBAE-0BF48958AF33}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Feuille 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Calculation_1964132435862011908:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:Price:qk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[none:modele:nk]</field>
+            <field>[federated.0w8oek30tn4kt2168p9pa0yfa96k].[yr:VenteYear:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6E297EFF-0DBC-470D-9CD8-C9C955460EBA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Feuille 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Feuille 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Feuille 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Feuille 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAZhUlEQVR4nO3da28c153n8W9V9f3evHTzTkukFSmydbGcyI4SexzbmXEys0CCncFigc3u
+      ALsI9sG+i919FdnFLHYw2JkAQZKdZGaNSZRJ6CSeKLrYkmVSJCVSvF+7m32rrqpz9gFFyhIp
+      uWiTElv9/wCCwe7q4pFVv66q869zjqG11gjRosyn3QAhniYJgGhpEgCxL7TWTExOcnvyNkpr
+      tNYopahtrFKsOiil0FqxUihye+LOvZ/1A3+eBkPuAcR++cXFixhaM/nxh2S78qwt1uhoT0Iq
+      w41/+Q1//pf/mcu//ilDR4f56T/9MxfOv8LY1F1SusE3vvNvyLennnibJQBi39z+6AOWHIvS
+      4l26u3MYOo7n2KxWqhSLa3zt9ddZmJumJxPjvStjxCMmrrZoz2R46aUzT6XN+x4ArTWGYezn
+      LoU4MPt+D6CU2u9dCnFg5CZYtDQJgGhpEgDR0iQAoqUF/G5YKqwRjkSZW1gm35FhvWwTMT2s
+      cJxQMIBSHolE4iDbKsS+8xUAz6kzduNj0vkcM3dnKNf6iBgeVSuIdte5e/suL7zyClHP267w
+      CdEMfAWgWi5jhQOsFcpkUjGcho3tOkSCNQwrRL67i1KxSL5ts5JnWdaBNlqI/bK3QpjWqHuF
+      rq2PGYbxQOHL8zwJgGgavu8BADAMzHsHu1R7xbNAeoFES5MAiJYmARAtTQIgWpoEQLQ0371A
+      nudhmia2bRMKBnE9hWloMK3tniHTlDyJ5uIrAFp5XPnte2R7+lhdK5FNxtio1AgHTTBN6sUK
+      HQMDDPTmN7eXSrBoEr4CUFpbxsFkdXWdRCzAStklGwlhBgIoz6Faq2EGAtsDoYVoFr4rwZ7j
+      oE2DhfklOtvTlCoNQpbCDEUJWgGUconFYlIJFk1l38cESwBEM5G7VtHSJACipUkAREuTAIiW
+      JgEQLW1v4wHuebjjSMYGiGblrxKsNR9dvczRF09z+feXGejqYG2jRtjSmKEIloJgPM5AX/dB
+      t1eIfeWvErwyz+LqOvUPPqRYLlOx24iHg5iBMJ5TY2JskrOvv44ng+JFk/FdCGtUKxjROJVS
+      EVybtQ2bsKWwwjEiwRCO59LZ0S6FMNFUpBIsWpr0AomWJgEQLU0CIFqaBEC0NAmAaGkSANHS
+      fD4KoZmaGCfV3snC3BzJVIpKtUHY8rDCMUJWEG1AV1fuYFsrxD7zFYBKYZXZ2QUSnd04tott
+      uwS0hzbC1Mtlrt8c4/zbb0slWDQdX4Uwp2GzPD9PxXFwPYN4JMBGtUHEUpihGOFAABcY6OuR
+      QphoKlIJFi1NboJFS5MAiJYmARAtTQIgWpoEQLQ0CYBoab4Hxa8tLxFNJJidXyLfnmZ9o35v
+      RFiccCCA0h7pdPog2yrEvvMVAKdeYfLWBKG2DnozYT6+vUQ2YtAIhFDFeaZuTXHma1+VSrBo
+      Or4C0Gg4RGJhTK2YmlsmGU9QqtpEAnWMYJiBI4MUC+t0ZhKALJQtmsfnWCgbtqYDkoWyRbP6
+      HAtlH0RzhHiypBdItDQJgGhpEgDR0iQAoqVJAERL871O8HqhSCqVZKNcJRmLUGu4WIbGDISw
+      TBO0IhgKHXR7hdhXvgMwPXELZYRYL66T7+5Duw0CAQvQFJbW6D9+nJ5cm6wVLJqKr0sgpRTh
+      WIxypUp7NkG94d5/U4NpWbie++gdCHFI+aoEK89hrVAinUpS2qiSSkSp2S4BU2EGwlimidaK
+      UCgklWDRVGRQvGhp0gskWpoEQLQ0CYBoaRIA0dIkAKKl+R4PoLcHwuzsNJKFskWz8hUAr1Hn
+      +vXrBEJxGp5HJh6hUK4RtsAMhtCORyyTZbBfFsoWzcVXAAwrSDgYZHltlba2BCtlj2wkjBEI
+      4Tk1pqfv8mJvnwyKF03H3/TodpXJqRl6uruYm18i35mlWGkQMT2sSJxwIIirXLKZjBTCRFOR
+      SrBoadILJFqaBEC0NAmAaGkSANHSJACipUkAREvzXQm+NT5BrmeQ6anbdLWnWduw702PHiVo
+      WmAF6O3JH3R7hdhXvgJgBkM4tQpTE2MsFsskYnHCJpiBKE6txs2btzj/9ltSCRZNx1chrFGr
+      MDE1TWeum1q1TNDUFMqNe2eAGJFAEEcreru7pBAmmopUgsUzb3l5md///vd0dnZiWRaGYRCN
+      RhkeHpabYPHsu3HjBqurq6ysrHDr1i2OHTvG2toaa2tre1wfQIgmdOrUKVZWVkin05imycTE
+      BJVKhenpabkEEq1pawZDuQQSLckwDOb+9qIEQLQur1KXAIjW5RTK/ivBY+MTxBMZysU1oskU
+      1ZpN2NysBIdMCwIBenu6DrrNQuwLp1QlnM/6rwS7tQpmpg3HM4goiJgGZjCGW6/xsVSCRZMp
+      T8wSfa5rb5Vgy7DQpkUyFmaj0iBseVjhOJFgEEcperrz0gskmsLC//0NyReO+DsDhKJxThw/
+      cdBtEuKJqc2tkHvny3ITLFqP9hQojWFZEgDRemqzy0R6OzAMQwIgWk/1zgKxwc0eSwmAaDm1
+      mWWiAzlAAiBakLO2QTCTACQAosU4pSqBVGz7Z3+VYKfO+MQUHR3tLK2tk29LUyjb2yPCwoEg
+      Siva29sOrOFC7IfqnXliR7q3p/T3VwkOhLArRUZLNU4e6eDWTIFs1MAOhvEqq1z7eIKX3/y6
+      VILFoVeZWiR5YgDX3VzX2lcAnHqNQDROxoOJmWUyqSTlik3YtbFCEY69cILi2irtyT4AqQSL
+      Q6uxsEb8T76MGdg89P1Xgk98EQPY7btdVogRzUB7Cu16GIH7X9C+h0RuHeRyqItmVZtb2S6A
+      bZFeINEyancWiA0+OHmbBEC0jNrdZaL9uQdekwCIluEU7hfAtkgAREtwNqpYiSg81GEjARAt
+      oXZngfgnCmBbfPUCaeUxMzNDZy7P8soaufb7lWAzFCMUsNDKIxqLffrOhHgKqtNLJI8P7Hjd
+      VwCUcnEbNh99eIPCRolCVx8hPAwrgFZLzE/Pc/zcOcKRCEqpfW+8EJ9XfW6F9q+fwfO8B173
+      FYBGtcTE7DJd2RQZI0ajYdPwPCJBG8wAmWyWcrlMvn1z6jnTlCsrcXhsFcACkfCO93wFIJJs
+      5/UL57FME9f1CAQsPE9hGGAYJqZpoLW+XyyTyrA4ROrzq0R6OnY9Ln0FwDBMgoHNb/VQaPO/
+      D3/Ly0EvDqvq1CKxwdyu78m1injm1e4uEe3fffkuCYB45jnrGwSziV3fkwCIZ9qjCmBbJADi
+      mVabWiT2XNcj71ElAOKZVpteJNrT8cj3fQdgq8C1NeRRKYWW4Y/ikKvPrxLp370HCB7RDTo6
+      OsrKygqvvvoqpmniNWrcuHEdxwviak17OkZho0YkYGAEgrhVm1RXF0f6uw/sLyLEXmnPQzVc
+      zNCje/t3fadWqzE9Pc2rr74KgNIenpUgHfFwUSxvKDpiUQgEUW6dpbU1OgcHZVC8OFTqsyuE
+      u9t2PP7wSbsGoFKp0NPTc/9A1iaJWJCurgEWF5c5M9DG+oZ9b3r0HP2DR1HK3R4ML4PixWFg
+      zywTG+wiENjDGaBcLhOJRJiZmdmu9gYjMZ4fHgYgkYgDEI0fRJOF2D+1u8vk3jr32G123ATH
+      43FCoRDf+MY3DqxhQjwJmwWw5GO32REArTU3b97k2rVrB9YwIQ6au1HFikfAfPwzajsCsLi4
+      iGVZzM3NHVjjhDho1elFYoP5T31Ic8caYUopyuUyhmGQSCT2/JSnrBEmDoPFf3if+HAvief7
+      HrvdjjOAaZokk0lKpZJ0Z4qmVZ9f3TEFym527R/67W9/S7lcJhgMksvlNiu/WmEa9/Oi1OaA
+      GAxze7Y4GRMgDgPVcNGOixkOfuq2uwYgGo2ilKKtbXO6c+XUuXHjOunOfm5+/DHHBrpZu1cJ
+      xgrgVOpkenp4rm9z2Rk5c4inqXZ3ieigv2Nx1wC4rku5XN7+WSkX14pjNcoEgiY1B1KxCIYV
+      RHk2K8UiuSPPoZSSSrB46ip35gn3tD+2ArxlRwCKxSJXr17l+PHj94c9GhbpeJi2nn4udPdi
+      aPdeJVhhhbsYeO4onvKkEiwOhfrsCtkvnXhsBXjLji0SiQSnTp1iYmJi+7VgOMbQ0NAD23XH
+      Hl9gEOJp0FrjVeoEEhFf2+/oBapWq2xsbDA0NCQ3taLpNFZLBLNJDJ9T8+yoA3xeUgcQT1Ph
+      8hhevUH7V17wtb2MCBPPlNrdZWI++v+3SADEM8VeWifc5X+1UgmAeGZ4NRu0fmANsE/je42w
+      zakPYbc7BrlZFodBfX6NaH9uT8ejv4WyGzVGb40TjaUoF9cJJ5LUa417dYAIljawIlEG+mRM
+      sHh6qlMLRPs69/QZf3ODmhaNhkdvb5LSRpWgaWGFAhjBMF6jyujoBF964w0ZEyyequr0Iskz
+      Q9uLYPvhb6Fsu0owGqNYKhOLhYnFwmxUzc0xwZk2zn+tC8euYKU2F8iQblDxpGmlUVWbcCqB
+      Yfm/tfUVgHA8w8njmQde232qUSGejsZqkWBmbwc/SC+QeEbUZpaJDvjv/98iARDPhNrUoq8B
+      MA+TAIhngr1cILKHAtgWCYBoetsFsKDvsta2vX9CiEOmvvBgAWxkZIR4PM78/DwvvPAClmVx
+      +fJljh07RrFYxLZt0uk0R44ckQCI5lebWiTSe38K9KWlJaampnjttdeYmJhAa01vby8XL16k
+      vb2dWCzGr371K9544w3/leBbk3dIJVOsFjfItaUolrdGhMUIW0EUmnx+b1U4IfZD7e4S6bPD
+      2z8PDw+Ty+WYnJyks7MT0zQZGxvj7Nmz3L17l1OnThGLxXAcx18AzGAY7bksLBd4vj/N6EyF
+      bASUGaZRKvHhzTHOv/22VILFk6c1TrmGEQ1vV4C/+MUvbr9t2zahUGj78ujcuc25Qru7u0Fr
+      fwGob6xRbkBve4rxmVU6M2k2yjZhXcYKx3jx3Fk21ldpS/QCUgkWT469UiSUSRAI7T4FyuPG
+      Bbsf3vEXgGiqgy+d3bzG6hno/wzNFOJgrP3mOlZs5wrwvnhKukFF86rNrlC9s0B8qHfPn9Wu
+      B4Z0g4omVZ9fZf5HI/T9u7e59NGHHFtOUCqVSCaTTE5Ocv78eUZHRwkEAtTrdSKRCK7rks1m
+      yefz6PUyRltSAiCaT2O1xPyPRuj989cJZZI0Gg3ee+89xsbGOHHiBKOjo5w9e5Z4PM61a9e4
+      fv06R48epVgsAvDd736XwHoZs6dNLoFEc2msbzD7dxfp+c5rhHPZ7Z6f5eVlkskkhUKBbDbL
+      +Pg4P/7xjxkcHKS/v59MJsPQ0BBKKebn5tHlOsQjMi2KaB5uucb0//p/dP3Zq8QG7j+Q73ke
+      pmliGMbmxFiex8rKCl1dm/ODuu799eu01hi1BmpmFesLvRIA0Rzcap2Zv/knOr9+jvjRzzf0
+      1ptexoiEMHNpf/cAWiuWV1ZJJ2LMzC+T78hQKG+tEhknFAiilUcyJdMliv3n1Wxm/ubndLx2
+      +nMf/AC6WMHs2Xxy1F8AlGJpfhEnGWF6aoaa3UfEUNQDQdRakemJaU5d+AoxqQSLfaYbLnN/
+      90tS554ncrR7T+N9d+UptOfhocF1/Z4BPErFAgYZMuk4rtOg6LpEAjWMYIjegT5KxQK5eyvy
+      ySWQ2A/KcZn70Qjp00Nkzj6/P/ssFNFtKax7FeK93QNojdJ6+2bDADCMB+ZhkXsAsR+0p5j9
+      wS+JDeZpe/Xkvu3XHZ3F6m3DSESBvRbCDAPz3sEuk2GJg6KVYuHvf0Oku53sK1/89A/43a/W
+      UNns/twidQBxqGilWPyH97FiEdpfO7W/X7RVGyMReWCfEgBxaGilWf75ZVCazjdf2verDLW6
+      gZGJP/CaBEAcClprVkc+wKvUyX/rFd8LXOzpdxQrGG0PdtXLs0BiV57ncfHiRVKpFKurqwwP
+      DzM6Oso3v/lNLl26hFKKRqPB8vIyPT09ZDIZTpw48Zl+l3I91t//iPrsCr1/8cbBHPyuB0rD
+      QxNnSQDErkzTxDRNbty4sT2i6tatW2itSafTXL58mS984QuYpsn169dxXZeuri6y2eyn7ltr
+      jWq4NFaL1O4sUrgyhrIdjv6X7+x5Zje/9HoZI5vYcVnlLwBa03AcgsEA5XKFaDRCw/GwDI1h
+      BTZXk9Ta16p8ojm4rsv8/DynT59mfHycpaUlBgcHuXz5Mo7j0Nu7+Qz+hQsXSCQSjI+PP3Jf
+      2lO45Rq12WUq47PYi+tgGITakkQH8uS+8SUCiSjmZ5jWxC+1Xsbq2TlvkK86gPIcLl/+gK6O
+      NPPrFTLxKNWaTTBggmFQXivSNTREf3fn9oNJ4tnUaDQIhUK7v6k1YKDqDez5VarTS9TnV3GK
+      ZaxElGhPO/GhXsJdbQ+s4q61ZmRkhEAgQKlUIpVKsbi4yJtvvonWmitXrmDbNtFolEajQU9P
+      z54vt7yrk1hnju543d/06IZJJBzCthtEg4rVskMyZGFaFlp7uPcWJN7KkjwK8ewKBoO7/vuW
+      b06z+LPfYSWiBKJhwp0ZooN50meHsZIxeKhD5+F9BAIBUqkUlUqFM2fOcPHiRRKJBD/4wQ+w
+      bZtgMMji4iLRaJSxsTGSyeT2WehTVW2MeGTXdvt+GK4znyOVTlMqbnAsk6BccwiaCisYYWj4
+      eZTa/ObXWksluIXUF9ZY/vkf0I5H+4UXyX75+J4vZTzPY2ZmhpdffplcbnOCq+HhYa5du8Zr
+      r73G2NgY0WiUF17YXPlxdnYW0zR9H2feegUzm8DcZXt5HHofzM/PMzU1RTQaJRKJ0NHRgeM4
+      JBIJLl26RF9fH1NTU7S3t9Pd3U0sFiOZbO4nZ51imZVfXsVZL9Pxxhlig137/jts2yYc/owD
+      3j/B/fAO1vG+XadOlIv1fRCLxZiZmSEYDHLp0iV+8YtfMDY2xp07dxgZGSGVSmHbNrdu3eL7
+      3/8+k5OTT7vJn5lTqrDw979l9m8vknrhKP3//o8P5OAH9uXg3+7+fMTCedJtsw9GRkZIJpOU
+      SiUMwyCZTDIzM0OlUuHo0aPMzc2Rz+fp7NzsJJienub06dMH3i6lFL/+9a8JBoMUCgUymQyr
+      q6u8/fbbXLlyBdi8Fl9YWCCbzZLL5Th5cvcHz7yazcqvrlGdmKPtwovkv3n+QPrr95suVDAy
+      8UdWleUSaB8ppYDNPvRCoUA8Hn/gWvWTnQRPoqdMa817771HNptlbGyMcDjMRx99xPe+9z1+
+      97vfYVkWvb29LC0tcfPmTVzX5dvf/vbmrGlbfyfbYf3SKBs3bpN5+TjpU0f3tAzp0+aNzWJ2
+      t2Eko7u+L2eAffTJgzqdSrHyz9dInxnGujdOwnjCT9IqpbZvGA3DIJPJcPToUa5evUo4HMY0
+      TWq1Gl/96ldJp9NMT09vt001XAqXxyj8YYz0mSEG/vKdA+2nByiXy4RCIdbX1wmFQriui9aa
+      eDxOJBJhYWGBdDpNuVwmHo9vd8c+6lJJa709+P1R5AxwQFTDYfS//TXRng56/uKPCGUPz03v
+      o/rytdaoeoPyrRnW3rtO4lg/bV85iRX9/Nfiftr0k5/8hHw+T6FQ4Ny5c7z77rsMDQ2xsrLC
+      O++8ww9/+ENyuRw3b96ks7OTUqnEuXPntuf73PH3qdRRs6tYxx7dXfqZzsNa6wf+iJ3qC2uk
+      XjxC/lvnmf0/v6Bw5RZaHY7/V48qZNXnVhn9r/+b+uwK/d/9YzrffOmJHPywefZMJpN0d3dT
+      KBQoFAqcPXuWWCyGUopSqURHRweVSoVUKsXJkyfxPI/r168/8hhUqxsY6fiu723xXQm+eu0G
+      Z06fZOR3f+C57k7WNmqELTBDYQxXEU6mGOzvljPAPfM/+Q3JEwMknu/Dsxss/ux9VM2m619d
+      IJDY/Xr0adv4eJrSBxP0/Os/wjCf7IAnx3GYnp4mHo9Tq9XI5/NEIhHu3LlDKBTCtm0cx6G9
+      vZ1isUh/fz9KKYrF4vb0Jw97XPfnFn/To1tB0skEs3cmqdRqVBuKRDiEEQzhOXWmJu9w+sIF
+      mR79Hq00tdllOv/k5c1B3JZJ7s9epTo+y/Rf/SNtXz9D4tjhm2S4cHWc7Csn8JQH6sn+bsMw
+      GBwcfOA1pRQDAwM7tt164M6yLG6vNFgsz3PyuYfWpvAUWik8A3jMQHp/C2S4No7rkB88wlc6
+      uzG8Bmsb96ZFSXfS1d2L492ffKjVzwCV2/PE+joJPHSpkTo+SKwvx/yPR6iNzZB75xWs8O7T
+      ej9pquHirpWI9+cwmujf71cf3KVmO7x4tAvzE2ctVSihM4ntwe+P4isAViDM8e2HjzbvqFOf
+      /tRryypeHiPz5d0f1gokovT927coXh1n+n/+jK4/ffWxy3s+fDY1DAOlFKZpopR6oEfp8/Qu
+      VcZnSXyhv6kOfgDH9ejMxPnl1Tt8/aUj26/r9TJm16cfpNINus+U41JfWCfa0/HIbQzDIHP2
+      eWIDOeZ/NEJ0ME/nG2cfOPjW19d5//33UUqxvr6OZVkkEgneeust3n33XVzXpV6vEwgECIVC
+      vPjiiwwNDX3mdhc/nKTzjTOf+fNPQ812MAz4j396lv/+1yMM97YxkE/f6/6sQfzTJ9E6/KW8
+      JlMZnyX2XJevgR2h9jQD/+EdrEiY6b/6R+yV4vZ72Wx2u9ejXq9j2zbVahWtNbVajWw2y+nT
+      pwkGg4yPjzMyMvKZ2+zVbNxShVBH+jPv42m4PV/gua4s4WCA//Stl/gfP72C7bibT3/GIr5u
+      5P8/+ncd2wzXZr4AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
